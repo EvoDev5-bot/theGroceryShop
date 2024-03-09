@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer
+}
+
+body main {
+    width: 1200px;
+    height: 1300px;
+}
+
+#i-btn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    clip-path: circle();
+    border: 2px solid orange;
+    color: #0ea5e9;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s linear;
+}
+
+#i-btn:hover {
+    width: 350px;
+    clip-path: none;
+    height: 150px;
+    background-color: black;
+    border: 2px solid white;
+    line-height: 25px;
+}
+
+.sect {
+    border: 2px solid orange;
+    height: 40%;
+    width: 456px;
+    margin-right: 20px;
+    width: 48%;
+    margin-right: 2%;
+    margin-left: 1%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+.row {
+    width: 100%;
+    height: 33.3%;
+    margin-bottom: 2%;
+    display: flex;
+    padding: 2%;
+}
+
+#earn-gems-sect,
+#buy-fruits-sect {
+    margin: 0;
+    margin-right: 1%;
+}
+
+.sect h1 {
+    color: #0ea5e9;
+    text-align: center;
+    font-family: Karla, sans-serif;
+    margin-bottom: 30px;
+}
+
+#shop-sect ul {
+    margin-left: 20px;
+    font-size: 1.7rem;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+#shop-sect ul li {
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+
+
+.fruit {
+    display: flex;
+    height: 50px;
+}
+
+.sell-all {
+    position: relative;
+    /* right: 640px; */
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: 2px solid #0ea5e9;
+    flex-shrink: 0;
+    color: orange;
+    margin-left: 10px
+}
+
+.sell {
+    position: relative;
+    /* right: 750px; */
+    height: 40px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid #0ea5e9;
+    color: orange;
+    flex-shrink: 0;
+}
+
+.empty {
+    width: 200px;
+}
+
+#sell-all-fruits {
+    position: relative;
+    width: 400px;
+    margin-left: 65px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 2.3rem;
+    background-color: transparent;
+    border: 2px solid #0ea5e9;
+    color: orange;
+    font-family: Open Sans, sans-serif;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.price {
+    position: relative;
+    top: 26px;
+    left: 8px;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+#exchange {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.exchange-btn {
+    width: 10%;
+    height: 100%;
+    margin: 10px;
+    border: 2px solid #0ea5e9;
+    background-color: transparent;
+    color: orange;
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.p {
+    font-family: Open Sans, sans-serif;
+    font-size: 3rem;
+}
+
+#exchange-buttons {
+    height: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#exchange-btn {
+    height: 15%;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 35%;
+    border: 2px solid #0ea5e9;
+    background-color: transparent;
+    color: orange;
+    font-family: Karla, sans-serif;
+    font-size: 1.4rem;
+}
+
+#exchange-error-msg {
+    position: relative;
+    /* top: 170px;
+    left: 650px; */
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    font-family: Karla, sans-serif;
+    color: red
+}
+
+#earn-coins-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#earn-coins-desc {
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+#addition-prob {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 3rem;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 10px;
+}
+
+#answer-field {
+    height: 35px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: #0ea5e9;
+    font-family: Karla, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#result {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 10px;
+}
+
+#answer {
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: #0ea5e9;
+    font-size: 1.4rem;
+}
+
+#farm-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ul {
+    margin-left: 10px;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li {
+    margin-top: 25px;
+}
+
+#farm-error {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-family: Karla, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+#btns {
+    display: flex;
+    width: 70%;
+}
+
+.farm-btn {
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: #0ea5e9;
+    font-family: Open Sans, sans-serif;
+    font-size: 1.4rem;
+}
+
+#upgrade {
+    font-size: 1.2rem;
+    width: 250px;
+}
+
+#harvest {
+    width: 150px;
+    margin-right: 10%;
+}
